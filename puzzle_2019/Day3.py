@@ -59,10 +59,7 @@ def part_1(m_input_path):
                     B_points.add(tuple(B_loc.values())) 
             
     mutual = A_points & B_points
-
-    for point in mutual:
-        m_distance = abs(point[0]) + abs(point[1])
-        break
+    m_distance = float('inf')
 
     for point in mutual:
         temp =  abs(point[0]) + abs(point[1])
