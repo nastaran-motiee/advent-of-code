@@ -2,9 +2,6 @@ def part_1(m_input_path):
     a, b = open(m_input_path).read().split('\n')
     a, b = [x.split(',') for x in [a, b]]
 
-    a_step = 0
-    b_step = 0
-
     a_points = f_wire_points(a)
     b_points = f_wire_points(b)
 
